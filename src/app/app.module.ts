@@ -10,6 +10,7 @@ import { SobreMimComponent } from './components/sobre-mim/sobre-mim.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import {NgOptimizedImage} from "@angular/common";
 import { ProjetosComponent } from './components/projetos/projetos.component';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
     FooterComponent,
     SobreMimComponent,
     SkillsComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,

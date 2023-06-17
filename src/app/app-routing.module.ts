@@ -4,6 +4,7 @@ import {MainPageComponent} from "./components/main-page/main-page.component";
 import {SobreMimComponent} from "./components/sobre-mim/sobre-mim.component";
 import {SkillsComponent} from "./components/skills/skills.component";
 import {ProjetosComponent} from "./components/projetos/projetos.component";
+import {ErrorPageComponent} from "./components/error-page/error-page.component";
 
 
 
@@ -11,7 +12,9 @@ const routes:Routes = [
   {path:'', component: MainPageComponent},
   {path: 'sobremim', component: SobreMimComponent},
   {path: 'skills', component: SkillsComponent},
-  {path: 'projetos', component: ProjetosComponent}
+  {path: 'projetos', component: ProjetosComponent},
+  {path: '**', component: ErrorPageComponent}
+
 ]
 
 @NgModule({
