@@ -11,6 +11,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import {NgOptimizedImage} from "@angular/common";
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
