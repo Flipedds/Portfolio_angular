@@ -12,6 +12,8 @@ import {NgOptimizedImage} from "@angular/common";
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import {HttpClientModule} from "@angular/common/http";
+import { FormComponent } from './components/form/form.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import {HttpClientModule} from "@angular/common/http";
     SobreMimComponent,
     SkillsComponent,
     ProjetosComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

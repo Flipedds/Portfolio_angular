@@ -5,6 +5,7 @@ import {SobreMimComponent} from "./components/sobre-mim/sobre-mim.component";
 import {SkillsComponent} from "./components/skills/skills.component";
 import {ProjetosComponent} from "./components/projetos/projetos.component";
 import {ErrorPageComponent} from "./components/error-page/error-page.component";
+import {FormComponent} from "./components/form/form.component";
 
 
 
@@ -13,6 +14,7 @@ const routes:Routes = [
   {path: 'sobremim', component: SobreMimComponent},
   {path: 'skills', component: SkillsComponent},
   {path: 'projetos', component: ProjetosComponent},
+  {path: 'form', component: FormComponent},
   {path: '**', component: ErrorPageComponent}
 
 ]
