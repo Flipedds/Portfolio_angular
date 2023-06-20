@@ -15,6 +15,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { FormComponent } from './components/form/form.component';
 import {FormsModule} from "@angular/forms";
 import { AdminComponent } from './components/admin/admin.component';
+import { PrivadoComponent } from './components/privado/privado.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AdminComponent } from './components/admin/admin.component';
     ProjetosComponent,
     ErrorPageComponent,
     FormComponent,
-    AdminComponent
+    AdminComponent,
+    PrivadoComponent
   ],
   imports: [
     BrowserModule,

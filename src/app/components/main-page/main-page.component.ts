@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {StorageService} from "../../services/storage.service";
 
 @Component({
   selector: 'app-main-page',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
-
+  constructor(private storageService: StorageService) {
+    storageService.setItem("login", false);
+  }
 }

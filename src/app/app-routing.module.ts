@@ -7,6 +7,9 @@ import {ProjetosComponent} from "./components/projetos/projetos.component";
 import {ErrorPageComponent} from "./components/error-page/error-page.component";
 import {FormComponent} from "./components/form/form.component";
 import {AdminComponent} from "./components/admin/admin.component";
+import {PrivadoComponent} from "./components/privado/privado.component";
+import {loginGuard} from "./guards/login.guard";
+
 
 
 
@@ -17,6 +20,7 @@ const routes:Routes = [
   {path: 'projetos', component: ProjetosComponent},
   {path: 'form', component: FormComponent},
   {path: 'admin', component: AdminComponent},
+  {path: 'privado', component: PrivadoComponent, canActivate: [loginGuard]},
   {path: '**', component: ErrorPageComponent}
 
 ]
