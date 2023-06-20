@@ -6,6 +6,7 @@ import {SkillsComponent} from "./components/skills/skills.component";
 import {ProjetosComponent} from "./components/projetos/projetos.component";
 import {ErrorPageComponent} from "./components/error-page/error-page.component";
 import {FormComponent} from "./components/form/form.component";
+import {AdminComponent} from "./components/admin/admin.component";
 
 
 
@@ -15,6 +16,7 @@ const routes:Routes = [
   {path: 'skills', component: SkillsComponent},
   {path: 'projetos', component: ProjetosComponent},
   {path: 'form', component: FormComponent},
+  {path: 'admin', component: AdminComponent},
   {path: '**', component: ErrorPageComponent}
 
 ]

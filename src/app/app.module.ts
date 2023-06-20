@@ -14,6 +14,7 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import {HttpClientModule} from "@angular/common/http";
 import { FormComponent } from './components/form/form.component';
 import {FormsModule} from "@angular/forms";
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {FormsModule} from "@angular/forms";
     SkillsComponent,
     ProjetosComponent,
     ErrorPageComponent,
-    FormComponent
+    FormComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
