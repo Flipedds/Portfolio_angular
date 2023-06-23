@@ -11,7 +11,7 @@ import {Toastify} from 'toastify-js';
 })
 
 export class ApiService {
-  private apiUrl = 'http://localhost:5000';
+  private apiUrl = 'https://api-portfolio-a9vx.onrender.com';
   private  headers = { 'Content-Type': 'application/json' };
   constructor(private http: HttpClient) {}
 
