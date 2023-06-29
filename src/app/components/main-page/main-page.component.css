@@ -1,0 +1,10 @@
+@media screen and
+(max-width: 600px){
+  #main_image{
+    width: 35vw;
+    position: relative;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-80%);
+  }
+}

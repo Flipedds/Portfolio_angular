@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isDivVisible: boolean = false;
+  close_menu() {
+    this.isDivVisible = false;
+  }
 
+  openMenu() {
+    this.isDivVisible = true;
+  }
 }
